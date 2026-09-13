@@ -1,16 +1,16 @@
 [
   {
     "jurisdiction":"Portsmouth, VA",
-    "status":"official-list-published",
+    "status":"official-live-adapter",
     "source_url":"https://www.portsmouthva.gov/crime",
-    "adapter_enabled":false,
-    "note":"The official city crime page publishes a Probation & Parole Warranted Offenders PDF. The production adapter must resolve and parse the current official PDF before displaying names."
+    "adapter_enabled":true,
+    "note":"Live adapter resolves the current official Probation & Parole Warranted Offenders PDF from the Portsmouth crime page and only returns names parsed from that official publication."
   },
   {
     "jurisdiction":"Chesapeake, VA",
     "status":"official-contact-only",
     "source_url":"https://www.cityofchesapeake.net/1241/Magistrate",
     "adapter_enabled":false,
-    "note":"The official city page directs outstanding-warrant inquiries to the Chesapeake Warrant Unit. Do not infer or generate names without a current official public name-level source."
+    "note":"The official city page directs outstanding-warrant inquiries to the Chesapeake Warrant Unit. No public name-level feed is enabled, so the app does not infer names."
   }
 ]
