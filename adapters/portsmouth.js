@@ -1,4 +1,4 @@
-import pdf from 'pdf-parse';
+import pdf from 'pdf-parse/lib/pdf-parse.js';
 
 export const PORTSMOUTH_CRIME_URL = 'https://www.portsmouthva.gov/crime';
 const ALLOWED_PDF_HOST = 'content.civicplus.com';
