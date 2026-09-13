@@ -1,16 +1,9 @@
 [
-  {
-    "jurisdiction":"Portsmouth, VA",
-    "status":"official-live-adapter",
-    "source_url":"https://www.portsmouthva.gov/crime",
-    "adapter_enabled":true,
-    "note":"Live adapter resolves the current official Probation & Parole Warranted Offenders PDF from the Portsmouth crime page and only returns names parsed from that official publication."
-  },
-  {
-    "jurisdiction":"Chesapeake, VA",
-    "status":"official-contact-only",
-    "source_url":"https://www.cityofchesapeake.net/1241/Magistrate",
-    "adapter_enabled":false,
-    "note":"The official city page directs outstanding-warrant inquiries to the Chesapeake Warrant Unit. No public name-level feed is enabled, so the app does not infer names."
-  }
+  {"jurisdiction":"Portsmouth, VA","status":"official-live-adapter","source_url":"https://www.portsmouthva.gov/crime","adapter_enabled":true,"note":"Live adapter resolves the current official Probation & Parole Warranted Offenders PDF from the Portsmouth crime page and only returns names parsed from that official publication."},
+  {"jurisdiction":"Newport News, VA","status":"official-live-adapter","source_url":"https://apps.nnva.gov/police-dashboard/ActiveWarrants.aspx","adapter_enabled":true,"note":"Live adapter parses the Newport News Police Department Active Warrants dashboard, which publishes names, DOB, issue date and warrant charge."},
+  {"jurisdiction":"Norfolk, VA","status":"official-public-feed-found","source_url":"https://data.norfolk.gov/widgets/cab7-wvn5","adapter_enabled":false,"note":"Norfolk publishes a daily Active Warrants open-data dataset. Adapter remains disabled until its machine-readable endpoint is runtime-verified."},
+  {"jurisdiction":"Hampton, VA","status":"official-wanted-list-found","source_url":"https://police2citizen.hampton.gov/wantedlist.aspx","adapter_enabled":false,"note":"Hampton Police publishes an official Wanted List. Adapter remains disabled until the live page structure is safely parsed and runtime-verified."},
+  {"jurisdiction":"Suffolk, VA","status":"official-contact-and-most-wanted-only","source_url":"https://www.suffolkva.us/192/Magistrates-Office","adapter_enabled":false,"note":"Suffolk directs outstanding-warrant inquiries to Suffolk Police and publishes periodic Most Wanted lists, but no full current name-level warrant feed has been verified."},
+  {"jurisdiction":"Virginia Beach, VA","status":"official-contact-only","source_url":"https://police.virginiabeach.gov/services/victim-and-witness-rights/magistrates-office-arrest-warrants","adapter_enabled":false,"note":"Virginia Beach provides official warrant and magistrate contact information, but no full public active-warrant name feed has been verified."},
+  {"jurisdiction":"Chesapeake, VA","status":"official-contact-only","source_url":"https://www.cityofchesapeake.net/1241/Magistrate","adapter_enabled":false,"note":"The official city page directs outstanding-warrant inquiries to the Chesapeake Warrant Unit. No public name-level feed is enabled, so the app does not infer names."}
 ]
