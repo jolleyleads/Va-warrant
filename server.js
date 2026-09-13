@@ -71,4 +71,10 @@ const server = http.createServer(async (req, res) => {
     console.error(err); json(res, 500, {error:'Internal server error'});
   }
 });
-server.listen(port, '0.0.0.0', () => console.log(`VA Warrant Watch listening on ${port}`));
+
+server.listen(port, '0.0.0.0', () => {
+  console.log(`VA Warrant Watch listening on ${port}`);
+  fetchPortsmouthWarrants()
+    .then(feed => console.log(`Portsmouth live-source preflight OK: ${feed.records.length} verified record(s); source=${feed.source_url}`))
+    .catch(error => console.error(`Portsmouth live-source preflight FAILED: ${error.message}`));
+});
